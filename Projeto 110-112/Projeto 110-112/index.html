@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+    <title>App De Gestos com As Mãos</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <center>
+        <h3 class="btn btn-danger heading">App de Reconhecimento de Gestos
+            <br>
+            <span>&#9996</span>
+            <span>&#128077</span>
+            <span>&#129305</span>
+            <span>&#129308</span>
+            <span>&#128400</span>
+            <br><br>
+        </h3>
+        <h3>Tire uma foto de um gesto para saber seu significado</h3>
+        <h3>O modelo está treinado nos seguintes gestos:</h3> 
+        <div>
+            <span>&#9996</span>
+            <span>&#128077</span>
+            <span>&#129305</span>
+            <hr></hr>
+          </div>
+        
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam:</label>
+            <div id="camera"></div>
+                <br><br>
+                <button onclick="takeSnapshot()" class="btn btn-primary">Capturar Imagem</button>
+            </div>
+            <div id="div_gesto">
+          
+            <label>Gesto:</label>
+            <p class="nomeGesto" id="resultNomeGesto"></p>
+
+            <p class="emoji" id="updateEmoji"></p>
+          </div>
+            <div  class="col-md-4 col-sm-12 col-xs-12">
+                <label id="labelFoto">Foto:</label>
+              
+                <div id="result"></div>
+                    <br><br>
+                    <button id="buttonPreview" onclick="check()" class="btn btn-success">Prever Emoção</button>
+                </div>
+
+
+            </div>
+
+    </center>
+
+</div>
+    <script src="main.js"></script>
+</body>

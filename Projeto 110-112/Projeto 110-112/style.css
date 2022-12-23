@@ -1,0 +1,45 @@
+body{
+    background-color: cornflowerblue;
+}
+span {
+    font-size: 30px;
+}
+
+#camera{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+    margin-top: 30px;
+}
+#result{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+    margin-left:400px;
+    margin-bottom: 1px;
+    
+}
+#div_gesto{
+    margin-right: 400px; 
+    font-size: 20px;
+}
+.heading {
+    font-size: 18px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+
+#labelFoto{
+    margin-left: 550px;
+    margin-bottom:10px;
+}
+#buttonPreview{
+    margin-left: 500px;
+}
+#resultNomeGesto{
+    letter-spacing: 5px;
+    margin-left: 100px;
+}
+#updateEmoji{
+    size: 100px;
+}
